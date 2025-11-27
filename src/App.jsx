@@ -5,7 +5,7 @@ import CategorySidebar from './components/CategorySidebar/CategorySidebar';
 import ProductGrid from './components/ProductGrid/ProductGrid';
 import Cart from './components/Cart/Cart';
 import ProductDetail from './components/ProductDetail/ProductDetail';
-import Login from './components/auth/Login';
+import Login from './components/Auth/Login';
 import Checkout from './components/Checkout/Checkout';
 import OrderTracking from './components/OrderTracking/OrderTracking';
 import { CartProvider } from './context/CartContext';
