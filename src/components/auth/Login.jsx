@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { AuthContext } from 'src/context/authContext';
+import { AuthContext } from '../../context/AuthContext';
 import './Login.css';
 import api from '../../services/api';
 
@@ -67,7 +67,7 @@ const Login = ({ onClose }) => {
       // close modal on success
       if (onClose) onClose();
     } catch (err) {
-      console.error('auth failed (detailed):', err);
+      console.error('Auth failed (detailed):', err);
 
       // Build user-friendly error message from axios/fetch-style error
       let msg = 'Authentication failed. Please check your details and try again.';
