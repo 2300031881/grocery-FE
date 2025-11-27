@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { authContext } from '../../context/authContext';
+import { AuthContext } from 'src/context/authContext';
 import './Login.css';
 import api from '../../services/api';
 
@@ -60,7 +60,7 @@ const Login = ({ onClose }) => {
         try {
           login(userFromBackend);
         } catch (err) {
-          console.warn('authContext.login threw:', err);
+          console.warn('AuthContext.login threw:', err);
         }
       }
 
